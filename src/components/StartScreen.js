@@ -39,7 +39,7 @@ function StartScreen({
           required
         />
         <button type="submit" className="btn ">
-          Submit
+          Get Question
         </button>
       </form>
 
