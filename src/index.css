@@ -3,6 +3,7 @@
   --color-dark: #34495e; /* Slightly lighter for contrast */
   --color-medium: #95a5a6; /* Softer gray for subtle tones */
   --color-light: #ecf0f1; /* Lighter grayish tone for balance */
+  --color-black: #000000; /* Black for background */
 
   --color-theme: #2ecc70ab; /* Changed to a red shade for theme */
   --color-accent: #e74d3c95; /* Changed to green for accent */
@@ -25,7 +26,7 @@ html {
 body {
   min-height: 100vh;
   color: var(--color-light);
-  background-color: var(--color-darkest);
+  background-color: var(--color-black);
   padding: 3.2rem;
 }
 
