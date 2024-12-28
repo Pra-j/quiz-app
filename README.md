@@ -28,4 +28,4 @@ This project is built using the following technologies:
 ## 📝 How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/quiz-app-advanced.git
+   git clone https://github.com/Pra-j/quiz-app.git
