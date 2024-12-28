@@ -167,7 +167,9 @@ function App() {
     function () {
       async function fetchQuestion() {
         try {
-          const res = await fetch(`/.netlify/functions/${category}`);
+          const res = await fetch(
+            `https://quiz-app-advanced.netlify.app/.netlify/functions/${category}`
+          );
           const questions = await res.json();
           dispatch({ type: "dataReceived", payload: questions });
         } catch (err) {
