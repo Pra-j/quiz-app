@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Bhaktapur",
+			"country": {
+				"code": "NP",
+				"name": "Nepal"
+			},
+			"subdivision": {
+				"code": "P3",
+				"name": "Bagmati Province"
+			},
+			"timezone": "Asia/Kathmandu",
+			"latitude": 27.6678,
+			"longitude": 85.419
+		},
+		"timestamp": 1735361288031
+	}
+}
