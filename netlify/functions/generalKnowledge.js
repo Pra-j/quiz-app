@@ -1,84 +1,94 @@
-const data = [
+const advancedData = [
   {
-    question: "What is the capital of France?",
-    options: ["Berlin", "Madrid", "Paris", "Rome"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question: "Who wrote the play 'Romeo and Juliet'?",
+    question: "Which treaty officially ended the First World War?",
     options: [
-      "Mark Twain",
-      "William Shakespeare",
-      "Charles Dickens",
-      "Jane Austen",
+      "Treaty of Versailles",
+      "Treaty of Tordesillas",
+      "Treaty of Ghent",
+      "Treaty of Westphalia",
     ],
-    correctOption: 1,
-    points: 10,
-  },
-  {
-    question: "Which country is known as the Land of the Rising Sun?",
-    options: ["China", "South Korea", "Japan", "India"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question: "Which ocean is the largest in the world?",
-    options: [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Southern Ocean",
-      "Pacific Ocean",
-    ],
-    correctOption: 3,
-    points: 10,
-  },
-  {
-    question: "What is the tallest mountain in the world?",
-    options: ["K2", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question: "What is the currency of the United Kingdom?",
-    options: ["Euro", "Pound Sterling", "Dollar", "Yen"],
-    correctOption: 1,
-    points: 10,
-  },
-  {
-    question: "What is the largest desert in the world?",
-    options: ["Sahara", "Gobi", "Kalahari", "Arctic Desert"],
-    correctOption: 3,
-    points: 10,
-  },
-  {
-    question: "Which continent is known as the 'Dark Continent'?",
-    options: ["Asia", "Africa", "Europe", "Australia"],
-    correctOption: 1,
-    points: 10,
-  },
-  {
-    question: "Who painted the Mona Lisa?",
-    options: [
-      "Vincent van Gogh",
-      "Claude Monet",
-      "Pablo Picasso",
-      "Leonardo da Vinci",
-    ],
-    correctOption: 3,
-    points: 10,
-  },
-  {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Mars", "Venus", "Jupiter", "Saturn"],
     correctOption: 0,
-    points: 10,
+    points: 15,
+  },
+  {
+    question: "Which physicist developed the general theory of relativity?",
+    options: [
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Stephen Hawking",
+    ],
+    correctOption: 2,
+    points: 15,
+  },
+  {
+    question: "In which year did the Titanic sink after hitting an iceberg?",
+    options: ["1905", "1912", "1923", "1898"],
+    correctOption: 1,
+    points: 15,
+  },
+  {
+    question: "Which ancient civilization built the city of Machu Picchu?",
+    options: ["Aztec", "Mayan", "Inca", "Olmec"],
+    correctOption: 2,
+    points: 15,
+  },
+  {
+    question: "Which country has the highest number of UNESCO World Heritage Sites?",
+    options: ["China", "Italy", "France", "India"],
+    correctOption: 1,
+    points: 15,
+  },
+  {
+    question: "What is the chemical symbol for the element with the atomic number 79?",
+    options: ["Ag", "Au", "Pb", "Pt"],
+    correctOption: 1,
+    points: 15,
+  },
+  {
+    question: "Which scientist is credited with discovering penicillin?",
+    options: [
+      "Marie Curie",
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Joseph Lister",
+    ],
+    correctOption: 1,
+    points: 15,
+  },
+  {
+    question: "Which mathematical conjecture remains unsolved and involves prime numbers?",
+    options: [
+      "Poincaré Conjecture",
+      "Fermat’s Last Theorem",
+      "Riemann Hypothesis",
+      "Goldbach’s Conjecture",
+    ],
+    correctOption: 2,
+    points: 15,
+  },
+  {
+    question: "What is the only planet in our solar system that rotates on its side?",
+    options: ["Neptune", "Uranus", "Venus", "Mercury"],
+    correctOption: 1,
+    points: 15,
+  },
+  {
+    question: "Which architectural structure is considered one of the Seven Wonders of the Ancient World and is located in present-day Iraq?",
+    options: [
+      "The Lighthouse of Alexandria",
+      "The Colossus of Rhodes",
+      "The Hanging Gardens of Babylon",
+      "The Mausoleum at Halicarnassus",
+    ],
+    correctOption: 2,
+    points: 15,
   },
 ];
 
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: JSON.stringify(data),
+    body: JSON.stringify(advancedData),
   };
 };
