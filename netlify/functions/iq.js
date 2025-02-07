@@ -1,72 +1,69 @@
-const data = [
+const complexIQData = [
   {
-    question:
-      "If a train travels 50 miles in 1 hour, how far will it travel in 3 hours?",
-    options: ["150 miles", "100 miles", "200 miles", "120 miles"],
+    question: "If 3 cats can catch 3 mice in 3 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+    options: ["3", "30", "100", "10"],
     correctOption: 0,
-    points: 10,
+    points: 20,
   },
   {
-    question: "Which number is the odd one out: 2, 4, 8, 10, 16?",
-    options: ["2", "4", "8", "10", "16"],
-    correctOption: 3,
-    points: 10,
-  },
-  {
-    question: "What comes next in the sequence: 1, 4, 9, 16, ?",
-    options: ["25", "20", "18", "30"],
-    correctOption: 0,
-    points: 10,
-  },
-  {
-    question:
-      "If you have 3 apples and you give away 2, how many apples do you have left?",
-    options: ["1", "3", "2", "5"],
-    correctOption: 0,
-    points: 10,
-  },
-  {
-    question: "Which is heavier, a pound of feathers or a pound of bricks?",
-    options: ["Feathers", "Bricks", "Neither", "Both are the same"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question: "What is the next number in the series: 1, 3, 6, 10, ?",
-    options: ["15", "12", "20", "21"],
-    correctOption: 3,
-    points: 10,
-  },
-  {
-    question: "How many months have 28 days?",
-    options: ["1", "2", "12", "4"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question:
-      "If a plane crashes on the border of the U.S. and Canada, where do they bury the survivors?",
-    options: ["U.S.", "Canada", "Nowhere", "Both countries"],
-    correctOption: 2,
-    points: 10,
-  },
-  {
-    question: "How many sides does a hexagon have?",
-    options: ["5", "6", "7", "8"],
+    question: "A clock shows the time as 3:15. The hour hand is pointing exactly at 3. What is the actual angle between the hour and minute hands?",
+    options: ["0°", "7.5°", "15°", "30°"],
     correctOption: 1,
-    points: 10,
+    points: 25,
   },
   {
-    question: "Which of these is an even number?",
-    options: ["3", "7", "10", "15"],
+    question: "A farmer has 17 sheep. All but 9 run away. How many sheep does he have left?",
+    options: ["0", "8", "9", "17"],
     correctOption: 2,
-    points: 10,
+    points: 20,
+  },
+  {
+    question: "Which number should replace the question mark in the sequence: 2, 6, 12, 20, 30, ?",
+    options: ["38", "40", "42", "44"],
+    correctOption: 2,
+    points: 25,
+  },
+  {
+    question: "A man walks south for 3 miles, then east for 4 miles, then north for 3 miles. How far is he from his starting point?",
+    options: ["3 miles", "4 miles", "5 miles", "7 miles"],
+    correctOption: 2,
+    points: 20,
+  },
+  {
+    question: "What comes next in the sequence: 1, 11, 21, 1211, 111221, ?",
+    options: ["112221", "122112", "312211", "221111"],
+    correctOption: 2,
+    points: 30,
+  },
+  {
+    question: "If a rope ladder is hanging over the side of a boat, and the bottom rung is 2 feet above water, how much of the ladder will be underwater if the tide rises by 4 feet?",
+    options: ["0 feet", "2 feet", "4 feet", "The entire ladder"],
+    correctOption: 0,
+    points: 20,
+  },
+  {
+    question: "Which number should replace the question mark? 144, 121, 100, 81, ?",
+    options: ["49", "64", "36", "25"],
+    correctOption: 1,
+    points: 25,
+  },
+  {
+    question: "John’s mother has five children: April, May, June, July. What is the name of the fifth child?",
+    options: ["August", "September", "John", "None of the above"],
+    correctOption: 2,
+    points: 15,
+  },
+  {
+    question: "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+    options: ["$0.05", "$0.10", "$0.15", "$0.20"],
+    correctOption: 0,
+    points: 30,
   },
 ];
 
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: JSON.stringify(data),
+    body: JSON.stringify(complexIQData),
   };
 };
