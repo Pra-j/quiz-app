@@ -109,6 +109,28 @@ const complexData = [
     correctOption: 1,
     points: 15,
   },
+  {
+    question: "What is the primary advantage of using Dependency Injection (DI) in .NET applications?",
+    options: [
+      "It improves application security by preventing SQL injection",
+      "It enhances performance by reducing compilation time",
+      "It promotes loose coupling and improves testability",
+      "It increases execution speed by optimizing garbage collection"
+    ],
+    correctOption: 2,
+    points: 25,
+  },
+  {
+    question: "In .NET, what is the main benefit of using asynchronous programming with async/await?",
+    options: [
+      "It reduces CPU usage by converting all tasks into background threads",
+      "It prevents memory leaks by automatically disposing of unused objects",
+      "It allows non-blocking execution, improving application responsiveness",
+      "It guarantees that code will execute in parallel on multiple CPU cores"
+    ],
+    correctOption: 2,
+    points: 25,
+  },
 ];
 
 exports.handler = async (event, context) => {
